@@ -1,0 +1,12 @@
+name: Print Repository Variable
+
+on:
+  push:
+
+jobs:
+  display-variable:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Print Access ID
+      run: echo "The ACCESS_ID is \"${{ vars.ACCESS_ID }}\""
